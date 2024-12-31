@@ -9,12 +9,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <zmk/display.h>
-#include <zmk/keymap.h>
 
-void zmk_display_update(void) {
-    zmk_display_status_layer();
-}
+
 
 / {
     keymap {
