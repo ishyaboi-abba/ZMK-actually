@@ -18,17 +18,12 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
-# For the `nice_view_spi` section
-nice_view_spi:
-  - cs-gpios: "<&gpio1 1 GPIO_ACTIVE_HIGH>"
-
+&nice_view_spi {
+    cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
 include:
   - board: nice_nano_v2
     shield: splitkb_aurora_lily58_left
-    cmake-args: "nice_view_adapter nice_view"
-    artifact-name: splitkb_aurora_lily58_left
-
+    shield: splitkb_aurora_lily58_left nice_view_adapter nice_view
   - board: nice_nano_v2
     shield: splitkb_aurora_lily58_right
-    cmake-args: "nice_view_adapter nice_view"
-    artifact-name: splitkb_aurora_lily58_right
+    shield: splitkb_aurora_lily58_right nice_view_adapter nice_view
