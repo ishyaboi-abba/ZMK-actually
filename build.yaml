@@ -23,10 +23,11 @@
 
 include:
   - board: nice_nano_v2
-    shield: splitkb_aurora_lily58
-    shield: splitkb_aurora_lily58_left nice_view_adapter nice_view
-    artifact-name: lily58_left
+    shield: splitkb_aurora_lily58_left
+    cmake-args: "nice_view_adapter nice_view"
+    artifact-name: splitkb_aurora_lily58_left
+
   - board: nice_nano_v2
-    shield: splitkb_aurora_lily58
-    shield: splitkb_aurora_lily58_right nice_view_adapter nice_view
-    artifact-name: lily58_right
+    shield: splitkb_aurora_lily58_right
+    cmake-args: "nice_view_adapter nice_view"
+    artifact-name: splitkb_aurora_lily58_right
